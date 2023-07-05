@@ -127,11 +127,19 @@ let cyclinder1 = new cyclinder(5,15);
 console.log(`\nAnswer for problem 6 is -->> ${cyclinder1.volume().toFixed(4)}`);
 
 // 7.Write a JavaScript program to get the length of a JavaScript object.
+let objLength = 0;
 let obj = {
-  name: 'aa',
-  class: 'aa'
+  name : "David Rayy",
+  sclass : "VI",
+  rollno : 12
 }
 console.log(obj);
+for(let key in obj){
+  if(obj.hasOwnProperty(key)){
+    objLength += 1;
+  }
+}
+console.log(`Answer for problem 7 is ---> ${objLength}`)
 
 // 8. Write a bubble sort algorithm in JavaScript.
 const bubbleAlgorithm = function(arr){
