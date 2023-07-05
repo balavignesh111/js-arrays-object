@@ -157,6 +157,16 @@ const bubbleAlgorithm = function(arr){
 
 console.log(`Answer for problem 8 is -->> ${bubbleAlgorithm([6,4,0, 3,-2,1])}`);
 
+// 10. Write a JavaScript function to print all the methods in a JavaScript object.
+
+function FindAllMethods(obj) {
+  return Object.getOwnPropertyNames(obj).filter(function(property) {
+      return typeof obj[property] == "function";
+  });
+}
+
+console.log(`Answer for problem 10 is -->> ${FindAllMethods(Math)}`);
+console.log(`Answer for problem 10 is -->> ${FindAllMethods(Array)}`);
 // 9. Write a JavaScript program to create a clock.
 
 const clock = function(){
@@ -174,4 +184,5 @@ const clock = function(){
   console.log(time);
   
 }
-// setInterval(clock, 1000);
+setInterval(clock, 1000);
+
