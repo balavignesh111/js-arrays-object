@@ -114,6 +114,24 @@ console.log(`\nAnswer for problem 5 is --->>> ${uniqueValue([1, 2, 3, 4, 5])}`)
 console.log(`\nAnswer for problem 5 is --->>> ${uniqueValue([1, -2, -2, 3, 4, -5, -6, -5])}`)
 
 // 6. Write a JavaScript program to get the volume of a cylindrical with four decimal places using object classes
+class cyclinder{
+  constructor(radius, height){
+    this.radius = radius;
+    this.height = height;
+  }
+  volume(){
+    return Math.PI * this.radius ** 2 * this.height;
+  }
+}
+let cyclinder1 = new cyclinder(5,15);
+console.log(`\nAnswer for problem 6 is -->> ${cyclinder1.volume().toFixed(4)}`);
+
+// 7.Write a JavaScript program to get the length of a JavaScript object.
+let obj = {
+  name: 'aa',
+  class: 'aa'
+}
+console.log(obj);
 
 // 8. Write a bubble sort algorithm in JavaScript.
 const bubbleAlgorithm = function(arr){
